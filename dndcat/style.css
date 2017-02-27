@@ -1,5 +1,6 @@
 body{
 	font-family: Georgia;
+	font-size:X-large;
 	color: brown;
 	background-image: url(parchment-0.jpg);
 	background-size: 100%, auto;
@@ -54,6 +55,7 @@ li {
 }
 
 .floatright{
+	width:40%;
 	float: right;
 	margin: 20px;
 }
