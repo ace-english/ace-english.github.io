@@ -1,0 +1,88 @@
+body{
+	font-family: Georgia;
+	color: brown;
+	background-image: url(parchment-0.jpg);
+	background-size: 100%, auto;
+	background-position: fixed;
+	text-align: center;
+	}
+.header{
+	text-align:left;
+	height:50px;
+}
+.outer_list{
+	font-size: 20pt;
+	font-weight: 600;
+}
+.middle_list{
+	padding-left: 50px;
+	margin-top:10px;
+	font-size: 16pt;
+	font-weight: normal;
+	font-style: italic;
+}
+.inner_list{
+	font-style: normal;
+	list-style-type: disk;
+	padding-left:30px;
+	font-size: 11pt;
+	font-weight: light;
+}
+.linklist{
+	text-align:left;
+}
+h1{
+	text-align:center;
+}
+h2{
+	text-align:center;
+}
+hr{
+	border-color:brown;
+	border-style: groove;
+}
+
+ul{
+	list-style-type:none;
+	/*margin: 0 0 0 12px;
+	padding: 0;*/
+}
+
+li {
+	list-style-type: none;
+	/*margin-bottom:10px;*/
+}
+
+.floatright{
+	float: right;
+	margin: 20px;
+}
+
+.prose{
+	text-align:left;
+	text-indent:10px;
+	margin-top: 40px;
+	width: 60%;
+    	margin-left: auto;
+    	margin-right: auto;
+}
+
+dd{
+	text-indent: 10px;
+	font-size: 9pt;
+	font-style: normal;
+}
+
+.statblock{
+	text-align:left;
+	margin-top: 40px;
+	width: 80%;
+    	margin-left: auto;
+    	margin-right: auto;
+}
+a{
+	color:black;
+}
+a:hover{
+	color:red;
+}
