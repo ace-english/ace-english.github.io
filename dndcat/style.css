@@ -11,27 +11,6 @@ body{
 	text-align:left;
 	height:50px;
 }
-.outer_list{
-	font-size: 20pt;
-	font-weight: 600;
-}
-.middle_list{
-	padding-left: 50px;
-	margin-top:10px;
-	font-size: 16pt;
-	font-weight: normal;
-	font-style: italic;
-}
-.inner_list{
-	font-style: normal;
-	list-style-type: disk;
-	padding-left:30px;
-	font-size: 11pt;
-	font-weight: light;
-}
-.linklist{
-	text-align:left;
-}
 h1{
 	text-align:center;
 }
@@ -49,7 +28,7 @@ ul{
 	padding: 0;*/
 }
 
-li {
+ul li {
 	list-style-type: none;
 	/*margin-bottom:10px;*/
 }
@@ -65,22 +44,20 @@ li {
 	text-indent:10px;
 	margin-top: 40px;
 	width: 60%;
-    	margin-left: auto;
-    	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 dd{
 	text-indent: 10px;
-	font-size: 9pt;
-	font-style: normal;
 }
 
 .statblock{
 	text-align:left;
 	margin-top: 40px;
 	width: 80%;
-    	margin-left: auto;
-    	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 a{
 	color:black;

@@ -16,7 +16,7 @@
 
 
 		<p>
-			<h2 style="text-align:left">Succubus Level 3:</h2>
+			<h2 style="text-align:left" id="level">Succubus</h2>
 			<ul>
 				<li> Jennessa has advantage on all social checks against men. </li>
 				<li> She also gains a +1 to insight </li>
@@ -72,31 +72,44 @@
 			<h3 id="current_xp">hi</h3>
 
 
-		<script> 
-		//Kiss on the cheek from Brad - 1
+		<script>
 			
 			var total=0;
 			var string = "";
 			var array = [];
-			
+			var next_lvl = new Array(0,1000,4000,8000,16000, 24000, 32000, 42000, 52000, 64000)
+			var current_lvl=3;
 			function victim(source, xp){
 				this.source = source;
 				this.xp = xp;
 				array.push(this);
 			};
 			
+			
 			new victim("Kiss on the cheek from Brad", 1);
 			new victim("Pirate sex", 1100);
 			new victim("Pirate sex", 1100);
 			new victim("Pirate kiss", 10);
 			new victim("Pirate 4-way", 3300);
+			new victim("Pirate 4-way", 3300);
+			new victim("Pirate 4-way", 3300);
+			new victim("Pirate captain", 1100);
 				
 			for (var i = 0; i < array.length; i++) {
-              total = total + array[i].xp ;
-			string+="<li>"+ array[i].source+" - "+ array[i].xp+ " xp </li>";
+				total = total + array[i].xp ;
+				string+="<li>"+ array[i].source+" - "+ array[i].xp.toLocaleString()+ " xp </li>";
+				
+				if (total>next_lvl[current_lvl])
+				{
+					string += "<li><strong> LEVEL UP </li></strong>";
+					total-=next_lvl[current_lvl];
+					current_lvl++;
+				}
+				
             }
+			document.getElementById("level").innerHTML= "Succubus Level " + current_lvl;
 			document.getElementById("log").innerHTML =string;
-			document.getElementById("current_xp").innerHTML = total.toLocaleString() + " xp / 8,000 xp "; 
+			document.getElementById("current_xp").innerHTML = total.toLocaleString() + " xp / " + next_lvl[current_lvl].toLocaleString() +" xp "; 
 		</script>
 	</body>
 </html>
