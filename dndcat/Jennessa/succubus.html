@@ -71,14 +71,17 @@
 		</ul>
 			<h3 id="current_xp">hi</h3>
 
+			
 
 		<script>
 			
 			var total=0;
 			var string = "";
 			var array = [];
-			var next_lvl = new Array(0,1000,4000,8000,16000, 24000, 32000, 42000, 52000, 64000)
+			var next_lvl = new Array(0,1000,4000,8000,16000, 24000, 32000, 42000, 52000, 64000);
 			var current_lvl=3;
+			
+			
 			function victim(source, xp){
 				this.source = source;
 				this.xp = xp;
@@ -94,6 +97,8 @@
 			new victim("Pirate 4-way", 3300);
 			new victim("Pirate 4-way", 3300);
 			new victim("Pirate captain", 1100);
+			new victim("Kiss on the cheek to Brad", 1);
+			new victim("Hold Wells' hand", 1);
 				
 			for (var i = 0; i < array.length; i++) {
 				total = total + array[i].xp ;
@@ -108,7 +113,7 @@
 				
             }
 			document.getElementById("level").innerHTML= "Succubus Level " + current_lvl;
-			document.getElementById("log").innerHTML =string;
+			document.getElementById("log").innerHTML = string;
 			document.getElementById("current_xp").innerHTML = total.toLocaleString() + " xp / " + next_lvl[current_lvl].toLocaleString() +" xp "; 
 		</script>
 	</body>
